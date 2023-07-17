@@ -1,0 +1,150 @@
+<!-- Indicated the version of html = hypertext markup -->
+<!DOCTYPE html> 
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        .title{
+            text-align: center;
+            color: #0e0e0e;
+            text-transform: uppercase;
+            font-size: 3rem;
+            font-family: sans-serif;
+        }
+
+        .container{
+            border: 2px solid red;
+            overflow: hidden;
+            padding: 30px 30px;
+        }
+
+        .blog{
+            max-width: 1080px;
+            width: 100%;
+            margin: 0 auto;
+        }
+        .blog-post{
+            border: 2px solid #777;
+            width: 30%;
+            margin-right: 10px;
+            height: 570px;
+            float: left;
+            cursor: pointer;
+            border-radius: 20px;
+            padding: 10px;
+        }
+
+        .blog-post p{
+            text-align: justify;
+            font-size: 14px;
+            color: #0e0e0e;
+            font-family: sans-serif;
+        }
+
+        .blog-post img{
+            width: 100%;
+            border-radius: 10px;
+        }
+
+        .blog-title{
+            border-bottom:2px solid #777 ;
+            padding-bottom: 20px;
+            font-size: 30px;
+            text-align: center;
+            color: #0e0e0e;
+        }
+
+        .blog-post a{
+            text-decoration: none;
+            font-family: sans-serif;
+            text-transform: uppercase;
+            margin-top: 20px;
+            display: block;
+            text-align: center;
+        }
+
+        .blog-btn{
+            padding: 10px 30px;
+            background: #777;
+            color: #0e0e0e;
+            border-radius: 20px;
+            transition: background 0.3s ease-in;
+        }
+        .blog-btn:hover{
+            background: #ff960d;
+        }
+        .update-time{
+            line-height: 1;
+        }
+
+        .update-time p{
+            color: #777;
+            font-size: 12px;
+            padding-left: 25px;
+        }
+        .update-time h6{
+            color: #ff960d;
+            font-size: 10px;
+            padding-left: 25px;
+            margin-top: -10px;
+        }
+
+        @media only screen and (max-width:991px){
+            .blog-post{
+            width: 100%;
+            margin-bottom: 20px;
+            height: auto;
+        }
+
+        .blog{
+            max-width: 576px;
+            width: 100%;
+            margin: 0 auto;
+        }
+        }
+        </style>
+</head>
+<body>
+    <div class="container">
+        <div class="blog">
+            <h1 class="title">Our recent blog</h1>
+            <hr>
+            <div class="blog-post sajek">
+                <h2 class="blog-title">Sajek VIlla Tour</h2>
+                <div class="update-time">
+                    <p>date:16-July-2023</p>
+                    <h6>@user0218</h6>
+                </div>
+                <img src="https://media-cdn.tripadvisor.com/media/photo-s/0d/ec/f7/04/view-from-balcony.jpg" alt="...">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet eveniet, sequi a incidunt sunt labore iure consequatur quos, voluptatibus quisquam possimus hic consequuntur ad debitis?</p>
+                <a href="#" class="btn blog-btn">Visit blog</a>
+            </div>
+            <div class="blog-post Coxs-bazar">
+                <h2 class="blog-title">Cox's Bazar Tour</h2>
+                <div class="update-time">
+                    <p>date:16-July-2023</p>
+                    <h6>@user0218</h6>
+                </div>
+                <img src="https://th.bing.com/th/id/R.6e2e50a992e279db5f2a475f5869c4f6?rik=BZcakb8gdY%2fDnA&riu=http%3a%2f%2fwww.tripsilo.com%2fuploads%2fimages%2ftours%2fslider%2f702393_cox%27s-bazar-(S1)-2.jpg&ehk=Zr%2fxY1kRo%2fM%2biWnxWDrXYopo%2beFsrYJEQCjw%2bG3pwj4%3d&risl=&pid=ImgRaw&r=0" alt="...">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet eveniet, sequi a incidunt sunt labore iure consequatur quos, voluptatibus quisquam possimus hic consequuntur ad debitis?</p>
+                <a href="#" class="btn blog-btn">Visit blog</a>
+            </div>
+            <div class="blog-post ranggamati">
+                <h2 class="blog-title">Ranngamati Tour</h2>
+                <div class="update-time">
+                    <p>date:16-July-2023</p>
+                    <h6>@user0218</h6>
+                </div>
+                <img src="https://th.bing.com/th/id/OIP.2rW0CpBssQLcrumhGhqCHgHaEo?pid=ImgDet&rs=1" alt="...">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet eveniet, sequi a incidunt sunt labore iure consequatur quos, voluptatibus quisquam possimus hic consequuntur ad debitis?</p>
+                <a href="#" class="btn blog-btn">Visit blog</a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
